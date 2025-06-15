@@ -28,25 +28,50 @@ body {
     border-radius: 55px;
     color: #fff;
     height: 100%;
+    width: 100%;
     text-align: right;
     cursor: pointer;
     transition: flex 0.7s ease-in-out;
+    
 }
 
 .image__container h3 {
     position: absolute;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
-    bottom: 5px;
-    left: 30px;
-    font-size: 1.875rem;
+    text-align: start;
+    font-size: 1.25rem;
     font-weight: 500;
+}
+
+@media screen and (min-width: 400px){
+    .image__container h3 {
+        left: calc(1rem + 5%);
+        font-size: 1.25rem;
+        width: 90%;
+        bottom: 2.5%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .image__container h3 {
+        font-size: 1.5rem;
+        width: 90%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .image__container h3 {
+        font-size: 1.75rem;
+        width: 90%;
+        bottom: 2.5%;
+    }
 }
 
 
 .active {
-    flex: 5;
-    
+    flex: 5;    
 }
 
 .active h3 {
